@@ -5,3 +5,5 @@ I could clone the CSR1000V to have others as well as disjoining the F5s and/or i
 
 I am also interested in installing GNS3 with some devices:
 http://www.itcrunch.eu/index.php/2017/09/20/virtualizing-cisco-nexus-9k-with-gns3/
+
+Update: Testing a differnt GIT procedure
