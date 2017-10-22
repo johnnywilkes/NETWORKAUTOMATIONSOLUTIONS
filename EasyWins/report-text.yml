@@ -1,7 +1,0 @@
----
-- file: path="{{results}}/bootvar.log" state=touch
-  run_once: true
-- lineinfile:
-    dest:   "{{results}}/bootvar.log"
-    regexp: "{{inventory_hostname}}"
-    line:   "{{'%-20s %8s'|format(inventory_hostname,"Current Image",ansible_net_image)}}"
