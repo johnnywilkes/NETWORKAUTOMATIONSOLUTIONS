@@ -1,8 +1,0 @@
----
-- name:  Collect Show Bootvar infob from all Devices
-  hosts: all
-  vars:
-  - results: "{{inventory_dir}}/results"
-  tasks:
-  - include: "read-{{src|default('device')}}.yml"
-  - include: "report-{{dst|default('text')}}.yml"
