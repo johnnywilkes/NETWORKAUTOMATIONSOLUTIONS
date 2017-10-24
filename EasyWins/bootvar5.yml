@@ -15,5 +15,5 @@
       dest: "{{results}}/bootvar.log"
       regexp: "{{inventory_hostname}}"
       line: |
-        {{'%-20s %8s'|format(inventory_hostname,facts.stdout[0])}}
+        {{'%-20s %8s'|format(inventory_hostname,facts.stdout)}}
         {{'%-20s %8s'|format(inventory_hostname,ansible_net_image)}}
