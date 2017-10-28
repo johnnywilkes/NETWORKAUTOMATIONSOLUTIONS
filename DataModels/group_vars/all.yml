@@ -3,3 +3,10 @@ ios_provider:
   username:  "{{ansible_user}}"
   password:  "{{ansible_ssh_pass}}"
   host:      "{{ip|default(ansible_host)|default(inventory_hostname)}}"
+username: admin
+password: cisco
+enable: cisco
+priviledge: 15
+domain: testlab
+snmp: cisco
+vty: local login
