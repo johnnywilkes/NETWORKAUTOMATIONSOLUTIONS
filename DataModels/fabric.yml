@@ -1,0 +1,5 @@
+---
+asn: 21
+nopassint: gi3
+networkip: 192.168.23.0
+netmask: 255.255.255.0
