@@ -1,9 +1,8 @@
-R3                   BOOT variable = bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin,12;
+R2                   BOOT variable = bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin,12;
+R2                   bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin
+
 R3                   BOOT variable = bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin,12;
 R3                   bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin
-
-R2                   BOOT variable = bootflash:/IM-AN-IDIOT.bin,12;
-R2                   bootflash:packages.conf
 
 R1                   BOOT variable = bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin,12;
 R1                   bootflash:/csr1000v-universalk9.03.16.06.S.155-3.S6-ext.SPA.bin
