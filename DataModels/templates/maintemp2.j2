@@ -19,7 +19,7 @@ subscriber templating
 !
 multilink bundle-name authenticated
 !
-domain testlab
+domain {{domain}}
 !
 spanning-tree extend system-id
 !
@@ -71,7 +71,7 @@ interface GigabitEthernet3
  negotiation auto
 !
 !
-router eigrp 21
+router eigrp {{asn}}
  network 192.168.23.0
  passive-interface default
  no passive-interface GigabitEthernet3

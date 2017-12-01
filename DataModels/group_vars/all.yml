@@ -7,6 +7,6 @@ username: admin
 password: cisco
 enable: cisco
 priviledge: 15
-domain: testlab
+domain: testlab.com
 snmp: cisco
 vty: local login

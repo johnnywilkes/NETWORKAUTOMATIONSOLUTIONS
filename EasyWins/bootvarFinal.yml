@@ -4,8 +4,12 @@
   vars:
   - results: results
   tasks:
-  - file: path={{results}} state=directory
-    run_once: true
+  #- file: path={{results}} state=directory
+    #run_once: true
+  - file: path={{results}}/bootvar.log state=absent
+    check_mode: no
+  - file: path={{results}}/bootvar.log state=touch
+    check_mode: no  
   - ios_command:
       commands: show bootvar | include bootflash
     register: facts

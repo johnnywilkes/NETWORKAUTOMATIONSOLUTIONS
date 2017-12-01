@@ -1,10 +1,29 @@
 ---
+- name: Prepare for configuration build
+  hosts: all
+  vars:
+  - build_dir: build_dir
+  - config_dir: config_dir
+  tasks:
+  - file: path={{build_dir}} state=directory
+    run_once: yes
+    check_mode: no
+  - file: path={{config_dir}} state=directory
+    run_once: yes
+    check_mode: no
+  - file: path={{build_dir}}/{{inventory_hostname}} state=absent
+    check_mode: no
+  - file: path={{build_dir}}/{{inventory_hostname}} state=directory
+    check_mode: no
+
 - name: Basline Config
   hosts: all
   vars:
   - build_dir: build_dir
   - config_dir: config_dir
   tasks:
-  - template: src=baseline.j2 dest=build_dir/{{inventory_hostname}}/base.conf
+  - include_vars: fabric.yml
+    #files:
+  - template: src=maintemp2.j2 dest=build_dir/{{inventory_hostname}}/main2.conf
     check_mode: no
     changed_when: false
